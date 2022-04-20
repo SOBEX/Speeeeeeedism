@@ -1,4 +1,5 @@
 "use strict";
+let speeeeeeedism = 1;
 (() => {
   var mg = Object.create;
   var Oi = Object.defineProperty,
@@ -20472,7 +20473,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
       let r = performance.now() - xc;
       wi += (r - wi) / om;
       let n;
-      for (; r > 5;) n = Jd, n += wi > 16 ? Math.min(3600 * 1e3, wi - Jd) : 0, n = Math.min(r, n), um(n / 1e3), xc += n, r -= n
+      for (; r > 5;) n = Jd, n += wi > 16 ? Math.min(3600 * 1e3, wi - Jd) : 0, n = Math.min(r, n), um(n / 1e3 * speeeeeeedism), xc += n, r -= n
     }, um = t => {
       if (!o.timeWarp) {
         let r = Qe().mult;

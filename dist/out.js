@@ -12413,7 +12413,7 @@ Type -1 in Buy: ANY to buy equal amounts of both Potions.` : "";
         c *= 1 + e.worlds.BONUS / 100, c *= e.highestSingularityCount >= 100 ? 1 + e.highestSingularityCount / 50 : 1, +e.singularityUpgrades.goldenQuarks3.getEffect().bonus > 0 && (e.goldenQuarks += Math.floor(e.goldenQuarksTimer / (3600 / +e.singularityUpgrades.goldenQuarks3.getEffect().bonus)) * c, e.goldenQuarksTimer = e.goldenQuarksTimer % (3600 / +e.singularityUpgrades.goldenQuarks3.getEffect().bonus)), l.gain >= 1 && (e.worlds.add(l.gain), e.quarkstimer = e.quarkstimer % (3600 / l.perHour))
       }
       if (!await rr()) return;
-      let n = (a = await Rl.default.getItem("Synergysave2")) != null ? a : localStorage.getItem("Synergysave2"),
+      let n = (a = await Rl.default.getItem("SpeeeeeeedismSave")) != null ? a : localStorage.getItem("SpeeeeeeedismSave"),
         s = typeof n == "string" ? n : await (n == null ? void 0 : n.text());
       if (s === void 0) return B("How?");
       await Il(s, vs()), setTimeout(() => i("exportinfo").textContent = "", 15e3)
@@ -12467,7 +12467,7 @@ Type -1 in Buy: ANY to buy equal amounts of both Potions.` : "";
         let l = new Blob([a], {
           type: "text/plain"
         });
-        localStorage.setItem("Synergysave2", a), await Rl.default.setItem("Synergysave2", l), localStorage.setItem("saveScumIsCheating", Date.now().toString()), await Dl(r), ys.canSave = !0;
+        localStorage.setItem("SpeeeeeeedismSave", a), await Rl.default.setItem("SpeeeeeeedismSave", l), localStorage.setItem("saveScumIsCheating", Date.now().toString()), await Dl(r), ys.canSave = !0;
         return
       } else return B(u.t("importexport.loadTestInLive"))
     }, ws = t => {
@@ -19756,7 +19756,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
       runeBlessingBuyAmount: 0,
       runeSpiritBuyAmount: 0,
       autoTesseracts: [!1, !1, !1, !1, !1, !1],
-      saveString: "Synergism-$VERSION$-$TIME$.txt",
+      saveString: "Speeeeeeedism-$VERSION$-$TIME$.txt",
       exporttest: !!1,
       dayCheck: null,
       dayTimer: 0,
@@ -20007,7 +20007,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
           type: "text/plain"
         });
         if (!ys.canSave) return !1;
-        localStorage.setItem("Synergysave2", n), await Ds.default.setItem("Synergysave2", s)
+        localStorage.setItem("SpeeeeeeedismSave", n), await Ds.default.setItem("SpeeeeeeedismSave", s)
       } else return await B(u.t("testing.errorSaving")), !1;
       if (t) {
         let s = i("saveinfo");
@@ -20025,7 +20025,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
       ["wowPlatonicCubes", t => new pn(Number(t.wowPlatonicCubes) || 0)]
     ]), X0 = async () => {
       var g, d, m, h;
-      let t = (g = await Ds.default.getItem("Synergysave2")) != null ? g : localStorage.getItem("Synergysave2"),
+      let t = (g = await Ds.default.getItem("SpeeeeeeedismSave")) != null ? g : localStorage.getItem("SpeeeeeeedismSave"),
         r = typeof t == "string" ? t : await (t == null ? void 0 : t.text()),
         n = r ? JSON.parse(atob(r)) : null;
       if ((!1 || !Ao) && (Object.defineProperties(window, {
@@ -20126,7 +20126,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
         for (; typeof e.achievements[252] > "u";) e.achievements.push(0);
         for (; typeof e.researches[200] > "u";) e.researches.push(0);
         for (; typeof e.upgrades[140] > "u";) e.upgrades.push(0);
-        (e.saveString === "" || e.saveString === "Synergism-v1011Test.txt") && (e.saveString = e.singularityCount === 0 ? "Synergism-$VERSION$-$TIME$.txt" : "Synergism-$VERSION$-$TIME$-$SING$.txt"), i("saveStringInput").value = Ya(e.saveString);
+        (e.saveString === "" || e.saveString === "Synergism-v1011Test.txt") && (e.saveString = e.singularityCount === 0 ? "Speeeeeeedism-$VERSION$-$TIME$.txt" : "Speeeeeeedism-$VERSION$-$TIME$-$SING$.txt"), i("saveStringInput").value = Ya(e.saveString);
         for (let L = 1; L < 126; L++) Dt(L, !0);
         for (let L = 1; L <= 200; L++) ba(L);
         for (let L = 1; L < e.cubeUpgrades.length; L++) Qn(L);
@@ -20558,7 +20558,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
       ni(), await new Promise(d => {
         ks(d, 0)
       });
-      let n = (l = await Ds.default.getItem("Synergysave2")) != null ? l : localStorage.getItem("Synergysave2"),
+      let n = (l = await Ds.default.getItem("SpeeeeeeedismSave")) != null ? l : localStorage.getItem("SpeeeeeeedismSave"),
         s = typeof n == "string" ? n : await (n == null ? void 0 : n.text());
       if (s) {
         let d = eg.default.decompressFromBase64(s);
@@ -20570,7 +20570,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
           let b = new Blob([h], {
             type: "text/plain"
           });
-          localStorage.setItem("Synergysave2", h), await Ds.default.setItem("Synergysave2", b), await B(u.t("main.transferredFromLZ"))
+          localStorage.setItem("SpeeeeeeedismSave", h), await Ds.default.setItem("SpeeeeeeedismSave", b), await B(u.t("main.transferredFromLZ"))
         }
         await X0()
       }
@@ -20611,7 +20611,7 @@ ${a}${l}${c}${g}${d}${m}${h}${b}${y}${v}${w}`;
       let n = isNaN(dn.getTime()) ? "" : ` [Last Update: ${r(dn.getHours())}:${r(dn.getMinutes())} UTC ${r(dn.getDate())}-${dn.toLocaleString("en-us",{month:"short"})}-${dn.getFullYear()}].`;
       t.textContent = `You're ${!1?"testing":"playing"} v${Jt} - The Alternate Reality${n} ${!1?u.t("testing.saveInLive"):""}`
     }
-    document.title = `Synergism v${Jt}`, jd(), Dl(), ld(), cd(), zd().catch(console.error)
+    document.title = `Speeeeeeedism v${Jt}`, jd(), Dl(), ld(), cd(), zd().catch(console.error)
   });
   window.addEventListener("unload", () => {
     window.scrollTo(0, 0)
